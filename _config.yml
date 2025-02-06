@@ -1,6 +1,6 @@
 title:              listenzy's Blog
 email:              listenzy0@gmail.com
-description:        A blog about DevOps, cloud engineering, and infrastructure automation. Sharing insights on Kubernetes, CI/CD, and system optimization.
+description:        Exploring DevOps, cloud engineering, and CI/CD.
 author:             JiYoung Park (listenzy0)
 baseurl:            "/"
 url:                "https://listenzy0.github.io"
