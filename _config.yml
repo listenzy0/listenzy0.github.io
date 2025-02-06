@@ -1,7 +1,7 @@
 title:              listenzy's Blog
-email:              listenzy0@gmail.com
-description:        DevOps, cloud, and infrastructure automation insights.
-author:             JiYoung Park (listenzy0)
+email:              listenzy@gmail.com
+description:        일기나 메모같은 그런 기록들
+author:             JiYoung Park (listenzy)
 baseurl:            "/"
 url:                "https://listenzy0.github.io"
 
