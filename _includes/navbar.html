@@ -21,7 +21,9 @@
             Categories
           </a>
           <div class="dropdown-menu" aria-labelledby="categoryDropdown">
+            {% assign category_map = "general:일반, dev:개발, cloud:클라우드, infra:인프라" | split: ", " %}
             {% assign categories = "" | split: "," %}
+            
             {% for post in site.posts %}
               {% for category in post.categories %}
                 {% unless categories contains category %}
@@ -29,8 +31,16 @@
                 {% endunless %}
               {% endfor %}
             {% endfor %}
+
             {% for category in categories %}
-              <a class="dropdown-item" href="{{ "/category/" | append: category | relative_url }}">{{ category }}</a>
+              {% assign display_name = category %}
+              {% for item in category_map %}
+                {% assign parts = item | split: ":" %}
+                {% if parts[0] == category %}
+                  {% assign display_name = parts[1] %}
+                {% endif %}
+              {% endfor %}
+              <a class="dropdown-item" href="{{ "/category/" | append: category | relative_url }}">{{ display_name }}</a>
             {% endfor %}
           </div>
         </li>
